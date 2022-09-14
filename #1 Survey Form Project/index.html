@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <form action="" id="survey-form">
+        <label for="name-label">
+            Name
+            <input type="text" id="name-label" placeholder="Enter your name" required>
+        </label>
+        <label for="email-label">
+            Email
+            <input type="text" id="email-label" placeholder="Enter your Email" required>
+        </label>
+        <label for="number-label">
+            Age (optional)
+            <input type="number" min="10" max="99" id="number-label" placeholder="Age">
+        </label>
+        <label for="dropdown">
+            Which option best describes your current role?
+            <select name="current-role" id="dropdown">
+                <option value="">Select current role</option>
+                <option value="2">Student</option>
+                <option value="3">Full Time job</option>
+            </select>
+        </label>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="">
+            <input type="radio" name="user-recomendation" value="definetly">
+            Definetly
+        </label>
+        <label for="">
+            <input type="radio" name="user-recomendation" value="maybe">
+            Maybe
+        </label>
+        <label for="">
+            <input type="radio" name="user-recomendation" value="not sure">
+            Not sure
+        </label>
+        <p>What would you like to see improved? (Check all thot apply)</p>
+        <label for="">
+            <input type="checkbox" value="Front-end Projects">
+            Front-end Projects
+        </label>
+        <label for="">
+            <input type="checkbox" value="Back-end Projects">
+            Back-end Projects
+        </label>
+        <label for="">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </label>
+        <input type="submit">
+    </form>
+</body>
+</html>
